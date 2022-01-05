@@ -1,12 +1,20 @@
-import Category from "../../components/common/category";
+import BlogListing from "../../components/blogListing";
 import Header from "../../components/common/Header";
+import SideBar from "../../components/sideBar";
 
 const Index = () => {
   return (
-    <div>
+    <>
       <Header pageName="Blog" />
-      <Category name="Categories" />
-    </div>
+      <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div className="container py-5">
+          <div className="row g-5">
+            <BlogListing />
+            <SideBar />
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
