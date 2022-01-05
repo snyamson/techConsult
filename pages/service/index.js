@@ -1,5 +1,11 @@
+import Header from "../../components/common/Header";
+
 const Index = () => {
-  return <div>This is the services page</div>;
+  return (
+    <div>
+      <Header pageName="Service" />
+    </div>
+  );
 };
 
 export default Index;

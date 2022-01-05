@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
       {/* <Spinner /> */}
-      <TopBar />
+
       <NavBar />
       <Modal />
       <Brand />
@@ -22,8 +22,6 @@ const Home = () => {
       <Services />
       <Quote />
       <Blog />
-      <BackToTop />
-      <Footer />
     </div>
   );
 };
