@@ -8,7 +8,7 @@ const RecentPost = () => {
       <div className="d-flex rounded overflow-hidden mb-3">
         <img
           className="img-fluid"
-          src="assets/img/blog-1.jpg"
+          src="../assets/img/blog-1.jpg"
           style={{ width: "100px", height: "100px", objectFit: "cover" }}
           alt="blog"
         />
@@ -22,7 +22,7 @@ const RecentPost = () => {
       <div className="d-flex rounded overflow-hidden mb-3">
         <img
           className="img-fluid"
-          src="assets/img/blog-2.jpg"
+          src="../assets/img/blog-2.jpg"
           style={{ width: "100px", height: "100px", objectFit: "cover" }}
           alt="blog"
         />
@@ -36,7 +36,7 @@ const RecentPost = () => {
       <div className="d-flex rounded overflow-hidden mb-3">
         <img
           className="img-fluid"
-          src="assets/img/blog-3.jpg"
+          src="../assets/img/blog-3.jpg"
           style={{ width: "100px", height: "100px", objectFit: "cover" }}
           alt="blog"
         />
@@ -50,7 +50,7 @@ const RecentPost = () => {
       <div className="d-flex rounded overflow-hidden mb-3">
         <img
           className="img-fluid"
-          src="assets/img/blog-1.jpg"
+          src="../assets/img/blog-1.jpg"
           style={{ width: "100px", height: "100px", objectFit: "cover" }}
           alt="blog"
         />
@@ -64,7 +64,7 @@ const RecentPost = () => {
       <div className="d-flex rounded overflow-hidden mb-3">
         <img
           className="img-fluid"
-          src="assets/img/blog-2.jpg"
+          src="../assets/img/blog-2.jpg"
           style={{ width: "100px", height: "100px", objectFit: "cover" }}
           alt="blog"
         />
@@ -78,7 +78,7 @@ const RecentPost = () => {
       <div className="d-flex rounded overflow-hidden mb-3">
         <img
           className="img-fluid"
-          src="assets/img/blog-3.jpg"
+          src="../assets/img/blog-3.jpg"
           style={{ width: "100px", height: "100px", objectFit: "cover" }}
           alt="blog"
         />

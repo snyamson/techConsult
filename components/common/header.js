@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Header = ({ pageName }) => {
+const Header = ({ pageName, desc }) => {
   return (
     <div className="container-fluid position-relative p-0">
       <nav className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
@@ -44,7 +44,9 @@ const Header = ({ pageName }) => {
       >
         <div className="row py-5">
           <div className="col-12 pt-lg-5 mt-lg-5 text-center">
-            <h1 className="display-4 text-white animated zoomIn">{pageName}</h1>
+            <h1 className="display-4 text-white animated zoomIn">
+              {desc ? desc : pageName}
+            </h1>
             <Link href="/">
               <a className="h5 text-white">Home</a>
             </Link>

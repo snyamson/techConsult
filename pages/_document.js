@@ -45,16 +45,16 @@ class MyDocument extends Document {
 
           {/* Libraries Stylesheet  */}
           <link
-            href="assets/lib/owlcarousel/assets/owl.carousel.min.css"
+            href="../assets/lib/owlcarousel/assets/owl.carousel.min.css"
             rel="stylesheet"
           />
-          <link href="assets/lib/animate/animate.min.css" rel="stylesheet" />
+          <link href="../assets/lib/animate/animate.min.css" rel="stylesheet" />
 
           {/* Customized Bootstrap Stylesheet  */}
-          <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+          <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
           {/* 
      Template Stylesheet  */}
-          {/* <link href="assets/css/style.css" rel="stylesheet" /> */}
+          <link href="../assets/css/style.css" rel="stylesheet" />
 
           {/* JavaScript Libraries  */}
           <script
@@ -65,14 +65,14 @@ class MyDocument extends Document {
             async
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
           ></script>
-          <script async src="assets/lib/wow/wow.min.js"></script>
-          <script async src="assets/lib/easing/easing.min.js"></script>
-          <script async src="assets/lib/waypoints/waypoints.min.js"></script>
-          <script async src="assets/lib/counterup/counterup.min.js"></script>
-          <script async src="assets/lib/owlcarousel/owl.carousel.min.js" />
+          <script async src="../assets/lib/wow/wow.min.js"></script>
+          <script async src="../assets/lib/easing/easing.min.js"></script>
+          <script async src="../assets/lib/waypoints/waypoints.min.js"></script>
+          <script async src="../assets/lib/counterup/counterup.min.js"></script>
+          <script async src="../assets/lib/owlcarousel/owl.carousel.min.js" />
 
           {/* Template Javascript  */}
-          <script async src="assets/js/main.js"></script>
+          <script async src="../assets/js/main.js"></script>
         </Head>
         <body>
           <Main />
