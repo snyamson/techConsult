@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
-import Category from "../../components/common/category";
-import Header from "../../components/common/Header";
-import RecentPost from "../../components/recentPost";
+import Header from "/components/common/Header";
+import RecentPost from "/components/recentPost";
 
 const BlogDetail = () => {
   const router = useRouter();

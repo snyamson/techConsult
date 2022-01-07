@@ -1,6 +1,6 @@
-import BlogListing from "../../components/blogListing";
-import Header from "../../components/common/Header";
-import SideBar from "../../components/sideBar";
+import BlogListing from "/components/blogListing";
+import Header from "/components/common/Header";
+import SideBar from "/components/sideBar";
 
 const Index = () => {
   return (

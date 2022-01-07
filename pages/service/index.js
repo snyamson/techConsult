@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import Category from "../../components/common/category";
-import Header from "../../components/common/Header";
+import Category from "/components/common/category";
+import Header from "/components/common/Header";
 
 const Index = () => {
   return (
-    <div>
+    <>
       <Header pageName="Service" />
       <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div className="container py-5">
@@ -72,7 +72,7 @@ const Index = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

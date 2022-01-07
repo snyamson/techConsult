@@ -1,6 +1,6 @@
-import BackToTop from "../components/common/backToTop";
-import Footer from "../components/common/footer";
-import TopBar from "../components/topBar";
+import BackToTop from "/components/common/backToTop";
+import Footer from "/components/common/footer";
+import TopBar from "/components/topBar";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {

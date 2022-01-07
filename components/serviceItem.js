@@ -4,8 +4,6 @@ const ServiceItem = () => {
   const animationDelay = (max, min) =>
     (Math.random() * (max - min) + min).toFixed(1);
 
-  console.log(animationDelay(0.3, 0.9) + "s");
-
   return (
     <div
       className="col-lg-4 col-md-6 wow zoomIn"
