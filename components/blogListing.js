@@ -8,7 +8,7 @@ const BlogListing = () => {
     <div className="col-lg-8">
       <div className="row g-5">
         {posts.map((post) => (
-          <BlogItem key={post} />
+          <BlogItem key={post} col="col-md-6" />
         ))}
         <Pagination />
       </div>

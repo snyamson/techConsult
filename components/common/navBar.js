@@ -20,75 +20,24 @@ const NavBar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0">
-              <a href="index.html" className="nav-item nav-link active">
+              <a href="/" className="nav-item nav-link active">
                 Home
               </a>
-              <a href="about.html" className="nav-item nav-link">
+              <a href="/about" className="nav-item nav-link">
                 About
               </a>
-              <a href="service.html" className="nav-item nav-link">
+              <a href="#services" className="nav-item nav-link">
                 Services
               </a>
-              <div className="nav-item dropdown">
-                <a
-                  href="/"
-                  className="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                >
-                  Blog
-                </a>
-                <div className="dropdown-menu m-0">
-                  <a href="blog.html" className="dropdown-item">
-                    Blog Grid
-                  </a>
-                  <a href="detail.html" className="dropdown-item">
-                    Blog Detail
-                  </a>
-                </div>
-              </div>
-              <div className="nav-item dropdown">
-                <a
-                  href="/"
-                  className="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                >
-                  Pages
-                </a>
-                <div className="dropdown-menu m-0">
-                  <a href="price.html" className="dropdown-item">
-                    Pricing Plan
-                  </a>
-                  <a href="feature.html" className="dropdown-item">
-                    Our features
-                  </a>
-                  <a href="team.html" className="dropdown-item">
-                    Team Members
-                  </a>
-                  <a href="testimonial.html" className="dropdown-item">
-                    Testimonial
-                  </a>
-                  <a href="quote.html" className="dropdown-item">
-                    Free Quote
-                  </a>
-                </div>
-              </div>
-              <a href="contact.html" className="nav-item nav-link">
+
+              <a href="/blog" className="nav-item nav-link ">
+                Blog
+              </a>
+
+              <a href="#contact" className="nav-item nav-link">
                 Contact
               </a>
             </div>
-            <button
-              type="button"
-              className="btn text-primary ms-3"
-              data-bs-toggle="modal"
-              data-bs-target="#searchModal"
-            >
-              <i className="fa fa-search"></i>
-            </button>
-            {/* <!-- <a
-            href="https://htmlcodex.com/startup-company-website-template"
-            className="btn btn-primary py-2 px-4 ms-3"
-            >Download Pro Version</a
-          > --> */}
           </div>
         </nav>
 

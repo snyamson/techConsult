@@ -9,14 +9,15 @@ const TopBar = () => {
             style={{ height: "45px" }}
           >
             <small className="me-3 text-light">
-              <i className="fa fa-map-marker-alt me-2"></i>123 Street, New York,
-              USA
+              <i className="fa fa-map-marker-alt me-2"></i>Mile 4 Street, Tafo -
+              Kumasi, Ghana
             </small>
             <small className="me-3 text-light">
-              <i className="fa fa-phone-alt me-2"></i>+012 345 6789
+              <i className="fa fa-phone-alt me-2"></i>+233 558 389 942
             </small>
             <small className="text-light">
-              <i className="fa fa-envelope-open me-2"></i>info@example.com
+              <i className="fa fa-envelope-open me-2"></i>
+              info.snyamson@gmail.com
             </small>
           </div>
         </div>

@@ -2,9 +2,15 @@
 
 import Link from "next/link";
 
-const BlogItem = () => {
+const BlogItem = ({ col }) => {
+  const animationDelay = (max, min) =>
+    (Math.random() * (max - min) + min).toFixed(1);
+
   return (
-    <div className="col-md-6 wow slideInUp" data-wow-delay="0.1s">
+    <div
+      className={`${col} wow slideInUp`}
+      data-wow-delay={`${animationDelay(0.3, 0.9)}s`}
+    >
       <div className="blog-item bg-light rounded overflow-hidden">
         <div className="blog-img position-relative overflow-hidden">
           <img

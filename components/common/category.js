@@ -1,4 +1,4 @@
-import Link from "next/link";
+import CategoryItem from "../categoryItem";
 
 const Category = ({ name }) => {
   return (
@@ -7,31 +7,7 @@ const Category = ({ name }) => {
         <h3 className="mb-0">{name}</h3>
       </div>
       <div className="link-animated d-flex flex-column justify-content-start">
-        <Link href="/">
-          <a className="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2">
-            <i className="bi bi-arrow-right me-2"></i>Web Design
-          </a>
-        </Link>
-        <Link href="/">
-          <a className="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2">
-            <i className="bi bi-arrow-right me-2"></i>Web Development
-          </a>
-        </Link>
-        <Link href="/">
-          <a className="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2">
-            <i className="bi bi-arrow-right me-2"></i>Web Development
-          </a>
-        </Link>
-        <Link href="/">
-          <a className="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2">
-            <i className="bi bi-arrow-right me-2"></i>Keyword Research
-          </a>
-        </Link>
-        <Link href="/">
-          <a className="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2">
-            <i className="bi bi-arrow-right me-2"></i>Email Marketing
-          </a>
-        </Link>
+        <CategoryItem />
       </div>
     </div>
   );
