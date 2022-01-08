@@ -1,9 +1,12 @@
 import ServiceItem from "./serviceItem";
 
-/* eslint-disable @next/next/no-html-link-for-pages */
 const Services = () => {
   return (
-    <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div
+      id="services"
+      className="container-fluid py-5 wow fadeInUp"
+      data-wow-delay="0.1s"
+    >
       <div className="container py-5">
         <div
           className="section-title text-center position-relative pb-3 mb-5 mx-auto"
@@ -15,9 +18,9 @@ const Services = () => {
           </h1>
         </div>
         <div className="row g-5">
-          <ServiceItem />
-          <ServiceItem />
-          <ServiceItem />
+          <ServiceItem title="Data Analytics" />
+          <ServiceItem title="Research & Scientific Writing" />
+          <ServiceItem title="App & Web Development" />
         </div>
       </div>
     </div>

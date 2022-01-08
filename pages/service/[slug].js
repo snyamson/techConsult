@@ -5,11 +5,11 @@ import Header from "/components/common/Header";
 
 const ServiceDetail = () => {
   const router = useRouter();
-  const { id: serviceId } = router.query;
+  const { slug } = router.query;
 
   return (
     <>
-      <Header pageName="Service" desc={`Service Name for id ${serviceId}`} />
+      <Header pageName="Service" desc={slug} />
       <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div className="container py-5">
           <div className="row g-5">

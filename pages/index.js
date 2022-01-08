@@ -10,7 +10,7 @@ import Quote from "/components/quote";
 const Home = () => {
   return (
     <div>
-      <Spinner />
+      {/* <Spinner /> */}
 
       <NavBar />
       <Modal />

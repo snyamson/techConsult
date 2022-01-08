@@ -1,12 +1,39 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Header = ({ pageName, desc }) => {
+  const router = useRouter();
+
+  const menu = [
+    {
+      name: "Home",
+      path: "/",
+    },
+    {
+      name: "About",
+      path: "/#about",
+    },
+    {
+      name: "Services",
+      path: "/#services",
+    },
+    {
+      name: "Blog",
+      path: "/blog",
+    },
+    {
+      name: "Contact",
+      path: "/contact",
+    },
+  ];
+
   return (
     <div className="container-fluid position-relative p-0">
       <nav className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
         <a href="index.html" className="navbar-brand p-0">
           <h1 className="m-0">
-            <i className="fa fa-user-tie me-2"></i>Startup
+            {/* <i className="fa fa-user-tie me-2"></i> */}
+            techConsult
           </h1>
         </a>
         <button
@@ -19,21 +46,17 @@ const Header = ({ pageName, desc }) => {
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto py-0">
-            <Link href="/">
-              <a className="nav-item nav-link">Home</a>
-            </Link>
-            <Link href="/">
-              <a className="nav-item nav-link">About</a>
-            </Link>
-            <Link href="/service">
-              <a className="nav-item nav-link active">Services</a>
-            </Link>
-            <Link href="/blog">
-              <a className="nav-item nav-link">Blog</a>
-            </Link>
-            <Link href="/">
-              <a className="nav-item nav-link">Contact</a>
-            </Link>
+            {menu.map((item, index) => (
+              <Link href={item.path} key={index}>
+                <a
+                  className={`nav-item nav-link ${
+                    router.asPath == item.path ? "active" : null
+                  }`}
+                >
+                  {item.name}
+                </a>
+              </Link>
+            ))}
           </div>
         </div>
       </nav>
@@ -51,7 +74,7 @@ const Header = ({ pageName, desc }) => {
               <a className="h5 text-white">Home</a>
             </Link>
             <i className="far fa-circle text-white px-2"></i>
-            <Link href={`/${pageName}`}>
+            <Link href={`/${pageName.toLowerCase()}`}>
               <a className="h5 text-white">{pageName}</a>
             </Link>
           </div>

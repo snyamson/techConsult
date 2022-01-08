@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const ServiceItem = () => {
+const ServiceItem = ({ title }) => {
   const animationDelay = (max, min) =>
     (Math.random() * (max - min) + min).toFixed(1);
 
@@ -24,12 +24,12 @@ const ServiceItem = () => {
         <div className="service-icon">
           <i className="fa fa-chart-pie text-white"></i>
         </div>
-        <h4 className="mb-3">Data Analytics</h4>
+        <h4 className="mb-3">{title}</h4>
         <p className="m-0">
           Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum
           dolore sed
         </p>
-        <Link href="/">
+        <Link href={`/service/${title}`}>
           <a className="btn btn-lg btn-primary rounded">
             <i className="bi bi-arrow-right"></i>
           </a>

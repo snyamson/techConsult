@@ -1,7 +1,13 @@
+import Link from "next/link";
+
 /* eslint-disable @next/next/no-img-element */
 const Brand = () => {
   return (
-    <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div
+      id="about"
+      className="container-fluid py-5 wow fadeInUp"
+      data-wow-delay="0.1s"
+    >
       <div className="container py-5">
         <div className="row g-5">
           <div className="col-lg-7">
@@ -57,13 +63,14 @@ const Brand = () => {
                 <h4 className="text-primary mb-0">+012 345 6789</h4>
               </div>
             </div>
-            <a
-              href="quote.html"
-              className="btn btn-primary py-3 px-5 mt-3 wow zoomIn"
-              data-wow-delay="0.9s"
-            >
-              Request A Quote
-            </a>
+            <Link href="/#quote">
+              <a
+                className="btn btn-primary py-3 px-5 mt-3 wow zoomIn"
+                data-wow-delay="0.9s"
+              >
+                Request A Quote
+              </a>
+            </Link>
           </div>
           <div className="col-lg-5" style={{ minHeight: "500px" }}>
             <div className="position-relative h-100">
