@@ -3,7 +3,8 @@
 import BlogItem from "./blogItem";
 
 /* eslint-disable @next/next/no-html-link-for-pages */
-const Blog = () => {
+const Blog = ({ posts }) => {
+  console.log(posts);
   return (
     <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div className="container py-5">
@@ -15,9 +16,11 @@ const Blog = () => {
           <h1 className="mb-0">Read The Latest Articles from Our Blog Post</h1>
         </div>
         <div className="row g-5">
-          <BlogItem col="col-lg-4" />
-          <BlogItem col="col-lg-4" />
-          <BlogItem col="col-lg-4" />
+          {posts.map((post) => (
+            <BlogItem key={post.id} post={post} col="col-lg-4" />
+          ))}
+          {/* <BlogItem col="col-lg-4" />
+          <BlogItem col="col-lg-4" /> */}
         </div>
       </div>
     </div>

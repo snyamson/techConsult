@@ -58,9 +58,9 @@ const Footer = () => {
                   </a>
                 </Link>
                 <p className="mt-3 mb-4">
-                  Lorem diam sit erat dolor elitr et, diam lorem justo amet
-                  clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum
-                  sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.
+                  techConsult is a analytical and statistical agency with
+                  specialization in Data Analytics, Research, Scientific Writing
+                  & Reporting and Website and Mobile App development
                 </p>
               </div>
             </div>

@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
+import { getPosts, getSinglePost } from "../../lib/posts";
 import Header from "/components/common/Header";
 import RecentPost from "/components/recentPost";
 
-const BlogDetail = () => {
+const BlogDetail = ({ post }) => {
   const router = useRouter();
-  const { id: blogId } = router.query;
+  const { slug: blogId } = router.query;
 
   return (
     <>
@@ -21,11 +22,16 @@ const BlogDetail = () => {
                     src="../assets/img/blog-1.jpg"
                     alt="service"
                   />
-                  <h1 className="mb-4">
-                    Diam dolor est labore duo ipsum clita sed et lorem tempor
-                    duo
-                  </h1>
-                  <p>
+                  <h1 className="mb-4">{post.title}</h1>
+                  <div
+                    style={{
+                      width: "100%",
+                      overflow: "hidden",
+                    }}
+                    dangerouslySetInnerHTML={{ __html: post.html }}
+                  />
+
+                  {/* <p>
                     Sadipscing labore amet rebum est et justo gubergren. Et
                     eirmod ipsum sit diam ut magna lorem. Nonumy vero labore
                     lorem sanctus rebum et lorem magna kasd, stet amet magna
@@ -66,7 +72,7 @@ const BlogDetail = () => {
                     aliquyam ipsum justo et, clita lorem sit vero amet amet est
                     dolor elitr, stet et no diam sit. Dolor erat justo dolore
                     sit invidunt.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -81,3 +87,30 @@ const BlogDetail = () => {
 };
 
 export default BlogDetail;
+
+export async function getStaticPaths() {
+  const posts = await getPosts("all");
+
+  // Get all Paths we want to create based on the number of posts
+
+  const paths = posts.map((post) => ({
+    params: { slug: post.slug },
+  }));
+
+  // {fallback: false} means posts not found  should be 404
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps(context) {
+  const post = await getSinglePost(context.params.slug);
+
+  // if (!post) {
+  //   return {
+  //     notFound: true
+  //   }
+  // }
+
+  return {
+    props: { post },
+  };
+}

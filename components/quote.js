@@ -25,17 +25,19 @@ const Quote = () => {
               </div>
               <div className="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
                 <h5 className="mb-4">
-                  <i className="fa fa-phone-alt text-primary me-3"></i>24 hrs
+                  <i className="fa fa-phone-alt text-primary me-3"></i>24/7
                   telephone support
                 </h5>
               </div>
             </div>
             <p className="mb-4">
-              Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd
-              ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo
-              rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod
-              et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit.
-              Sea dolore sanctus sed et. Takimata takimata sanctus sed.
+              Business storytelling carries an element of emotion and that’s
+              important but in many contexts, it has to be powered with data
+              backing it up.
+              <br />
+              <br />
+              We’ve got marketing solutions to help you boost your use of data
+              to inform your business decisions and marketing strategy.
             </p>
             <div
               className="d-flex align-items-center mt-2 wow zoomIn"

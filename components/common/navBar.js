@@ -104,7 +104,7 @@ const NavBar = () => {
                     Creative & Innovative
                   </h5>
                   <h1 className="display-1 text-white mb-md-4 animated zoomIn">
-                    Creative & Innovative Digital Solution
+                    We Make data insightful
                   </h1>
                 </div>
               </div>

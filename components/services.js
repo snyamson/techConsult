@@ -13,9 +13,7 @@ const Services = () => {
           style={{ maxWidth: "600px" }}
         >
           <h5 className="fw-bold text-primary text-uppercase">Our Services</h5>
-          <h1 className="mb-0">
-            Custom IT Solutions for Your Successful Business
-          </h1>
+          <h1 className="mb-0">Growth-First Analytical Services</h1>
         </div>
         <div className="row g-5">
           <ServiceItem title="Data Analytics" />

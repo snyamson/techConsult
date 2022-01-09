@@ -13,32 +13,30 @@ const Brand = () => {
           <div className="col-lg-7">
             <div className="section-title position-relative pb-3 mb-5">
               <h5 className="fw-bold text-primary text-uppercase">About Us</h5>
-              <h1 className="mb-0">
-                The Best IT Solution With 10 Years of Experience
-              </h1>
+              <h1 className="mb-0">DIGITAL ANALYTICS AGENCY</h1>
             </div>
             <p className="mb-4">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor
-              sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem
-              et sit, sed stet no labore lorem sit. Sanctus clita duo justo et
-              tempor eirmod magna dolore erat amet
+              “Let’s Shrink Big Data into Small Data …… <br /> And hope it
+              magically becomes Great Data”
+              <br />
+              These are the quotes we live by. In today’s competitive marketing
+              landscape, you don’t have to lose market share or customers to
+              your competitors because of the rapid shift of business world to a
+              data driven one.
             </p>
             <div className="row g-0 mb-3">
               <div className="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
                 <h5 className="mb-3">
-                  <i className="fa fa-check text-primary me-3"></i>Award Winning
-                </h5>
-                <h5 className="mb-3">
                   <i className="fa fa-check text-primary me-3"></i>Professional
                   Staff
+                </h5>
+                <h5 className="mb-3">
+                  <i className="fa fa-check text-primary me-3"></i>Fair Prices
                 </h5>
               </div>
               <div className="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
                 <h5 className="mb-3">
                   <i className="fa fa-check text-primary me-3"></i>24/7 Support
-                </h5>
-                <h5 className="mb-3">
-                  <i className="fa fa-check text-primary me-3"></i>Fair Prices
                 </h5>
               </div>
             </div>
