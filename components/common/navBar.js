@@ -3,8 +3,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import TopBar from "../topBar";
 
-const NavBar = () => {
+const NavBar = ({ header }) => {
   const router = useRouter();
 
   const menu = [
@@ -43,7 +44,8 @@ const NavBar = () => {
   ];
 
   return (
-    <div>
+    <>
+      <TopBar />
       <div className="container-fluid position-relative p-0">
         <nav className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
           <a href="index.html" className="navbar-brand p-0">
@@ -77,92 +79,119 @@ const NavBar = () => {
           </div>
         </nav>
 
-        <div
-          id="header-carousel"
-          className="carousel slide carousel-fade"
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img
-                className="w-100"
-                src="assets/img/carousel-1.jpg"
-                alt="Carousel"
-              />
-
-              <div
-                className="
-                carousel-caption
-                d-flex
-                flex-column
-                align-items-center
-                justify-content-center
-              "
-              >
-                <div className="p-3" style={{ maxWidth: "900px" }}>
-                  <h5 className="text-white text-uppercase mb-3 animated slideInDown">
-                    Creative & Innovative
-                  </h5>
-                  <h1 className="display-1 text-white mb-md-4 animated zoomIn">
-                    We Make data insightful
-                  </h1>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                className="w-100"
-                src="assets/img/carousel-2.jpg"
-                alt="Carousel"
-              />
-              <div
-                className="
-                carousel-caption
-                d-flex
-                flex-column
-                align-items-center
-                justify-content-center
-              "
-              >
-                <div className="p-3" style={{ maxWidth: "900px" }}>
-                  <h5 className="text-white text-uppercase mb-3 animated slideInDown">
-                    Creative & Innovative
-                  </h5>
-                  <h1 className="display-1 text-white mb-md-4 animated zoomIn">
-                    Creative & Innovative Digital Solution
-                  </h1>
-                </div>
+        {header ? (
+          <div
+            className="container-fluid bg-primary py-5 bg-header"
+            style={{ marginBottom: "90px" }}
+          >
+            <div className="row py-5">
+              <div className="col-12 pt-lg-5 mt-lg-5 text-center">
+                <h1 className="display-4 text-white animated zoomIn">
+                  {/* {desc ? desc : pageName} */}
+                  pageName
+                </h1>
+                <Link href="/">
+                  <a className="h5 text-white">Home</a>
+                </Link>
+                <i className="far fa-circle text-white px-2"></i>
+                <Link href="/">
+                  <a className="h5 text-white">pageName</a>
+                </Link>
               </div>
             </div>
           </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#header-carousel"
-            data-bs-slide="prev"
+        ) : (
+          <div
+            id="header-carousel"
+            className="carousel slide carousel-fade"
+            data-bs-ride="carousel"
           >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#header-carousel"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img
+                  className="w-100"
+                  src="assets/img/carousel-1.jpg"
+                  alt="Carousel"
+                />
+
+                <div
+                  className="
+                carousel-caption
+                d-flex
+                flex-column
+                align-items-center
+                justify-content-center
+              "
+                >
+                  <div className="p-3" style={{ maxWidth: "900px" }}>
+                    <h5 className="text-white text-uppercase mb-3 animated slideInDown">
+                      Creative & Innovative
+                    </h5>
+                    <h1 className="display-1 text-white mb-md-4 animated zoomIn">
+                      We Make data insightful
+                    </h1>
+                  </div>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <img
+                  className="w-100"
+                  src="assets/img/carousel-2.jpg"
+                  alt="Carousel"
+                />
+                <div
+                  className="
+                carousel-caption
+                d-flex
+                flex-column
+                align-items-center
+                justify-content-center
+              "
+                >
+                  <div className="p-3" style={{ maxWidth: "900px" }}>
+                    <h5 className="text-white text-uppercase mb-3 animated slideInDown">
+                      Creative & Innovative
+                    </h5>
+                    <h1 className="display-1 text-white mb-md-4 animated zoomIn">
+                      Creative & Innovative Digital Solution
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#header-carousel"
+              data-bs-slide="prev"
+            >
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#header-carousel"
+              data-bs-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
+        )}
       </div>
-    </div>
+    </>
   );
 };
 
 export default NavBar;
+
+// {
+//   `/${pageName.toLowerCase()}`;
+// }

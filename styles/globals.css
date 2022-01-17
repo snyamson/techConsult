@@ -17,10 +17,15 @@ a {
 
 /********** Body CSS **********/
 :root {
-  --primary: #06a3da;
+  --primary: #35bdf6;
   --secondary: #34ad54;
   --light: #eef9ff;
-  --dark: #091e3e;
+  --dark: #031e32;
+
+  /* --primary: #06a3da;
+  --secondary: #34ad54;
+  --light: #eef9ff;
+  --dark: #091e3e; */
 }
 
 /*** Spinner ***/

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
+import NavBar from "/components/common/navBar";
 import Category from "/components/common/category";
-import Header from "/components/common/Header";
 
 const ServiceDetail = () => {
   const router = useRouter();
@@ -9,9 +9,9 @@ const ServiceDetail = () => {
 
   return (
     <>
-      <Header pageName="Service" desc={slug} />
-      <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div className="container py-5">
+      <NavBar header />
+      <div className="container-fluid py-2 wow fadeInUp" data-wow-delay="0.1s">
+        <div className="container py-1">
           <div className="row g-5">
             <div className="col-lg-8">
               <div className="row g-5">
