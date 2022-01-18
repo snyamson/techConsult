@@ -11,7 +11,7 @@ import { getPosts } from "../lib/posts";
 const Home = ({ posts = [] }) => {
   return (
     <div>
-      {/* <Spinner /> */}
+      <Spinner />
       <NavBar />
       <Modal />
       <Brand />
